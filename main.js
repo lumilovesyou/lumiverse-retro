@@ -19,4 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 			e.src = (e.src.split(".jpeg")[0]).concat(".webp")
 		})
 	}
+
+    document.getElementById("gleebusPrevious").innerHTML = '<button onclick="gleebusOpen(-1)">Previous</button>';
+    document.getElementById("gleebusNext").innerHTML = '<button onclick="gleebusOpen(1)">Next</button>';
 });
